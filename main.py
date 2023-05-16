@@ -1,17 +1,29 @@
+import time
 
-def print_hi(name, n):
-    print(f'Hi, {name}')
-    for i in range(n):
+def genesis():
+    print(f'Hello, world!')
+    for i in range(10):
         print(i)
+        time.sleep(1)
 
 def print_f():
-    print(f'Hi, what is you name?')
+    print("knock knock")
+    for i in range(3):
+        print("knock")
+        time.sleep(1)
+    time.sleep(1)
+    print("who's there?")
     var = input()
     print(f"FUCK YOU {var}")
 
-
+def imporatnt_changes():
+    print(f'how many changes would you like to make?')
+    var = input()
+    time.sleep(3)
+    print(f"{var} important changes were made")
 
 if __name__ == '__main__':
-    print_hi("knock knock", 10)
+    genesis()
     print_f()
+    imporatnt_changes()
 
